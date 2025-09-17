@@ -6,6 +6,7 @@ header {
     color: rgb(0, 76, 255);
     border: 5px double blue;
     border-width: auto;
+    text-shadow: black;
 }
 
 /*Editing image to auto adjust height as page size changes
@@ -56,12 +57,14 @@ a{
     color: black;
 }
 
+/* Paragraph formatting */
 p{
     text-indent: 30px;
     font-family: Didot;
     font-size: 20px
 }
 
+/* Header formatting */
 h2{
     font-family: "Copperplate", fantasy;
     text-decoration-line: underline;
@@ -77,12 +80,52 @@ h3{
 h4{
     font-style: italic;
     font-size: 15px;
+    font-family: Didot;
 }
 
+/* List formatting */
 ul{
     list-style-type: "⭐";
+    line-height: 2.5;
 }
 
 li{
     padding-left: 10px;
+    font-family: Didot;
+}
+
+input{
+    font-family: "Times New Roman", serif;
+}
+
+textarea{
+    font-family: "Times New Roman", serif
+}
+
+/* Side by side block set-up */
+.skillset{
+    height: 300px;
+    width: 300px;
+    /* background-color: green; */
+    margin: auto;
+    width: 50%;
+}
+
+.contact-form{
+    height:300px;
+    width: 300px;
+    /* background-color: orange; */
+    margin: auto;
+    width: auto;
+}
+
+.further-info{
+    display:flex;   
+}
+
+/* Footer formatting */
+.footer{
+    font-size: 13px;
+    font-family: "Times New Roman", serif;
+    text-align: center;
 }
