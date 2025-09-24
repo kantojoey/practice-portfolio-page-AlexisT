@@ -1,12 +1,21 @@
-/* Centering header and aligning items */
+/* HEADER SECTION */
 header{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0A0703;
-    background-color: #A6C2E2;
+    /* color: #0A0703; */
+    color: white;
+    /* background-color: #A6C2E2; */
+    background-color:#3a6ea5;
     padding: 30px 20px;
     gap: 40px; /* space between image and title */
+}
+.profile-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    filter: brightness(1);
 }
 
 h1{
@@ -16,13 +25,19 @@ h1{
     font-weight: 700;
 }
 
-/* Styling and enlarging the image */
-.profile-image{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    display: block;
-    filter: brightness(1);
+body{
+    background-color: #FAFAFF;
+    margin: 0;
+}
+/* ABOUT ME SECTION IN MAIN */
+
+#about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+    border-radius: 5px;
+    border-color: darkblue;
 }
 
 h2{
@@ -32,41 +47,12 @@ h2{
     margin-left: 15px;
 }
 
-h3{
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-left: 15px;
-    font-style: italic;
-}
-
-/* Paragraph formatting */
 p{
     text-indent: 30px;
     font-family: "IBM Plex Serif", serif;
     font-size: 1rem;
     text-align: justify;
     line-height: 2.5rem;
-}
-
-ul{
-    text-indent: 30px;
-    font-family: "IBM Plex Serif", serif;
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 2.5rem;
-}
-
-#about-me{
-    display: flex;
-    gap: 40px;
-}
-
-.image{
-    margin-right: 20px;
-}
-body{
-    background-color: #FFF5EE;
 }
 
 .link{
@@ -91,4 +77,114 @@ body{
     text-decoration-style: solid;
     text-decoration-thickness: 2px;
     text-decoration-color: #800080;
+}
+
+.image{
+    margin-right: 20px;
+}
+
+h3{
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 15px;
+    font-style: italic;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+hr{
+  border: none; /* Remove default border */
+  height: 4px; /* Set the height of the line */
+  background-color: #070599; /* Set the color of the line */
+  margin: 20px 0; /* Add some vertical spacing */
+}
+
+ul{
+    text-indent: 30px;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    column-count: 2;
+}
+
+
+/* body{
+    background-color: #FFF5EE;
+} */
+nav {
+  background-color: #004E89; /* dark blue bar */
+  padding: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* puts links in a row */
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FFD700; /* gold highlight on hover */
+}
+
+#contact-form {
+  border: 5px solid #070599;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 0 15px 15px 15px; /* no top padding */
+}
+
+label{
+    font-family: "IBM Plex Serif", serif;
+    font-size: .9rem;
+}
+
+input{
+    margin-bottom: 20px;
+    font-family: "IBM Plex Serif", serif;
+    font-size: .70rem;
+}
+
+button{
+   text-align: center;
+   background-color: #3a6ea5;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   font-family: "IBM Plex Serif", serif;
+}
+
+main{
+    padding: 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center; /* center the whole row */
+  gap: 10px;               /* space between label and input */
+  margin-bottom: 10px;
+  padding-right: 15px;
+}
+
+.form-row label {
+  min-width: 60px; /* keeps labels aligned */
+  text-align: right;
+}
+.button-row{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: #004E89;
 }
